@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ui.viewPagerUI.OutboundRouteFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:hint="Kilometraje inicial"
+                app:boxStrokeColor="@color/clickablesColor"
+                app:cursorColor="@color/clickablesColor"
+                app:hintTextColor="@color/clickablesColor"
+                app:prefixText="Km.">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_startkm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Punto de partida"
+                app:boxStrokeColor="@color/clickablesColor"
+                app:cursorColor="@color/clickablesColor"
+                app:hintTextColor="@color/clickablesColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_start_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_weight="0.6"
+                    android:hint="Fecha de inicio"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="0.4"
+                    android:hint="Hora de inicio"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_start_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Punto de llegada"
+                app:boxStrokeColor="@color/clickablesColor"
+                app:cursorColor="@color/clickablesColor"
+                app:hintTextColor="@color/clickablesColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_end_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="0.6"
+                    android:hint="Fecha de fin"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="0.4"
+                    android:hint="Hora de fin"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_end_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Tipo de viaje"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:tag="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Normal"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:tag="expreso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expreso"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Producto"
+                app:boxStrokeColor="@color/clickablesColor"
+                app:cursorColor="@color/clickablesColor"
+                app:hintTextColor="@color/clickablesColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_outbound_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="0.6"
+                    android:hint="Documento relacionado"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_documentation_outbound"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="0.4"
+                    android:hint="Peso"
+                    app:boxStrokeColor="@color/clickablesColor"
+                    app:cursorColor="@color/clickablesColor"
+                    app:hintTextColor="@color/clickablesColor"
+                    app:suffixText="Kg.">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_kg_outbound"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_outbound_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/clickablesColor"
+                android:paddingHorizontal="40dp"
+                android:textSize="18sp"
+                android:paddingVertical="16dp"
+                android:text="Guardar" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

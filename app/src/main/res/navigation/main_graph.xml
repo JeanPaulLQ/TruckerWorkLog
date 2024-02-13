@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@+id/nav_panel">
+
+    <fragment
+        android:id="@+id/nav_panel"
+        android:name="com.someware.bitacoraviajes.views.ui.PanelFragment"
+        android:label="Panel Principal"
+        tools:layout="@layout/fragment_panel" />
+    <fragment
+        android:id="@+id/nav_works"
+        android:name="com.someware.bitacoraviajes.views.ui.WorksFragment"
+        android:label="Viajes"
+        tools:layout="@layout/fragment_works" />
+    <fragment
+        android:id="@+id/nav_reminders"
+        android:name="com.someware.bitacoraviajes.views.ui.RemindersFragment"
+        android:label="Recordatorios"
+        tools:layout="@layout/fragment_reminders" />
+    <fragment
+        android:id="@+id/nav_frecuntlydata"
+        android:name="com.someware.bitacoraviajes.views.ui.FrecuentlyDataFragment"
+        android:label="Datos Frecuentes"
+        tools:layout="@layout/fragment_frecuently_data" />
+</navigation>

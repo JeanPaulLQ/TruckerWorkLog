@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.ui.viewPagerUI.GeneralDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtlyt_truck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Placa tracto:"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/clickablesColor"
+            app:cursorColor="@color/clickablesColor"
+            app:hintTextColor="@color/clickablesColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_plateTruck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textCapCharacters"
+                android:capitalize="characters" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtlyt_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtlyt_truck"
+            android:layout_marginHorizontal="16dp"
+            android:hint="Placa Plataforma:"
+            app:boxStrokeColor="@color/clickablesColor"
+            app:endIconMode="clear_text"
+            app:cursorColor="@color/clickablesColor"
+            app:hintTextColor="@color/clickablesColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_platePlatform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textCapCharacters"
+                android:capitalize="characters" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear nuevo viaje"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="16dp"
+            android:backgroundTint="@color/clickablesColor"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    tools:context=".views.ui.viewPagerUI.IncomesExpensesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/group_chips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedChip="@id/outbound_chip"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/outbound_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gastos ida" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/return_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gastos Retorno" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/incomes_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresos" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fuel_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gastos combustible" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp" />
+    </LinearLayout>
+</FrameLayout>
